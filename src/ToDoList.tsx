@@ -1,3 +1,5 @@
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type React from "react";
 import { useEffect, useState } from "react";
 
@@ -82,7 +84,7 @@ export default function ToDoList() {
           onChange={handleInputChange}
         />
         <button type="submit" className="add-button">
-          Add
+          +
         </button>
       </form>
 
@@ -95,7 +97,7 @@ export default function ToDoList() {
               type="button"
               onClick={() => deleteTask(task.id)}
             >
-              Delete
+              <FontAwesomeIcon icon={faTrash} />
             </button>
             <button
               className="move-button"
