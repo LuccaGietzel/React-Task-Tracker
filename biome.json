@@ -1,0 +1,60 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.7/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "lineEnding": "lf"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "jsxQuoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "all",
+      "arrowParentheses": "always"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      "complexity": {
+        "noExcessiveCognitiveComplexity": {
+          "level": "warn",
+          "options": {
+            "maxAllowedComplexity": 15
+          }
+        },
+        "noForEach": "error",
+        "useSimplifiedLogicExpression": "error"
+      },
+      "correctness": {
+        "noUnusedVariables": {
+          "level": "warn",
+          "fix": "none"
+        },
+        "noUnusedFunctionParameters": {
+          "level": "warn",
+          "fix": "none"
+        },
+        "noUndeclaredVariables": "error",
+        "useJsxKeyInIterable": "error"
+      },
+      "style": {
+        "noParameterAssign": "error",
+        "useSelfClosingElements": "error",
+        "useShorthandFunctionType": "error",
+        "noUselessElse": "error"
+      }
+    }
+  }
+}
