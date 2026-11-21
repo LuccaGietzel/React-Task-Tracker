@@ -82,3 +82,25 @@ body {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .add-task-form {
+    .add-task-input {
+      font-size: 1rem;
+    }
+    .add-button {
+      font-size: 1rem;
+    }
+  }
+  .tasks {
+    .task {
+      font-size: 1rem;
+      button {
+        font-size: 1rem;
+      }
+    }
+  }
+}
