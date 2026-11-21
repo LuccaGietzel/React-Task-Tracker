@@ -23,7 +23,7 @@ export default function ToDoList() {
       taskInformation: newTaskInformation,
     };
 
-    setTasks((t) => [...t, newTask]);
+    setTasks((t) => [newTask, ...t]);
     setNewTaskInformation("");
   }
 
